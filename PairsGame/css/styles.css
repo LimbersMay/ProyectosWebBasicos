@@ -1,0 +1,89 @@
+:root {
+    --font: system-ui, -apple-system, BlinkMacSystemFont;
+
+    --color-container: #1D4D4F;
+}
+
+body {
+    background-color: #6BA8A9;
+    font-family: var(--font);
+    color: white;
+}
+
+#main-container {
+    background-color: var(--color-container);
+    width: 900px;
+    height: 600px;
+
+    position: relative;
+    border: solid 1px rgb(117, 117, 116);
+
+    margin: 0 auto;
+}
+
+#content-container {
+    background-color: var(--color-container);
+
+    width: 94%;
+    margin: 15px 15px 20px 20px;
+
+    position: absolute;
+    text-align: center;
+}
+
+/* Animation to rotate the card */
+@keyframes rotateA {
+    0% {transform: scaleX(1);}
+    5% {transform: scaleX(0.9);}
+    10% {transform: scaleX(0.8);}
+    15% {transform: scaleX(0.7);}
+    20% {transform: scaleX(0.6);}
+    25% {transform: scaleX(0.5);}
+    30% {transform: scaleX(0.4);}
+    35% {transform: scaleX(0.3);}
+    40% {transform: scaleX(0.2);}
+    45% {transform: scaleX(0.1);}
+    50% {transform: scaleX(0);}
+
+    55% {transform: scaleX(0.1);}
+    60% {transform: scaleX(0.2);}
+    65% {transform: scaleX(0.3);}
+    70% {transform: scaleX(0.4);}
+    75% {transform: scaleX(0.5);}
+    80% {transform: scaleX(0.6);}
+    85% {transform: scaleX(0.7);}
+    90% {transform: scaleX(0.8);}
+    95% {transform: scaleX(0.9);}
+    100% {transform: scaleX(1);}
+}
+
+@keyframes slideR {
+    from {background-color: #F2F4F6;}
+    to {background-color: yellowgreen;}
+}
+
+/* CARDS */ 
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.card {
+    background-color: #F2F4F6;
+    border-radius: 8px;
+    width: 120px;
+    height: 175px;
+    margin: 10px;
+
+    box-shadow: 3px 3px 3px #8888;
+}
+
+.guessed {
+    animation-name: rotateA;
+    animation-duration: 0.5s;
+}
+
+.unhidden-color {
+    background-color: violet;
+}

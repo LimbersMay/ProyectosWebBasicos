@@ -1,0 +1,118 @@
+body {
+    background-color: #377D71;
+}
+
+:root {
+    --font: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+#contendor {
+    background-color: #ffffff;
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+
+    display: block;
+}
+
+#contenedor-contenido {
+    position: absolute;
+    margin: 40px;
+}
+
+#titulo {
+    font-family: var(--font);
+    font-size: 25px;
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+#subtitulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: rgb(197, 197, 197);
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/* Contenedor de la parte de ingreso de datos*/
+
+
+#input-tarea {
+    border: solid 1px;
+    border-radius: 3px;
+    border-color: rgb(231, 229, 229);
+    width: 150px;
+    height: 20px;
+}
+
+#boton-agregar-tarea {
+    font-family: var(--font);
+    font-size: 15px;
+    background-color: #1a88b1;
+    color: white;
+    border-radius: 20px;
+    width: 75px;
+    height: 30px;
+}
+
+/* Estilos de las listas de las tareas */
+/* Quitamos el padding de la lista*/
+ul, ol {
+    padding: 0px;
+    margin-left: 15px;
+}
+
+ul {
+    margin: 25px 25px;
+}
+
+li {
+    margin-bottom: 5px;
+    font-family: var(--font);
+}
+
+/* Estilos de los botones inferiores */
+div button {
+    font-family: var(--font);
+    color: white;
+
+    width: 125px;
+    height: 35px;
+
+    border-radius: 15px;
+
+    margin-left: 10px;
+    border: solid 1px;
+}
+
+#limpiar-completado {
+    background-color: #317e9b;
+}
+
+#limpiar-lista {
+    background-color: rgb(148, 58, 58);
+}
+
+#guardar-lista {
+    background-color: #5c9e64;
+}
+
+#limpiar-completado:hover, #limpiar-lista:hover, #guardar-lista:hover, #boton-agregar-tarea:hover {
+
+    background-color: #1e5245;
+
+}
+
+/* Clase para tachar los elementos */
+.tachado {
+    text-decoration: line-through;
+}
+
+/* Mensaje de confirmación de que se ha guardado la tarea */
+#mensaje-contenedor {
+    font-family: var(--font);
+    color: #22642b;
+}

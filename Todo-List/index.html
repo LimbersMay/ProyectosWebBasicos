@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="contendor">
+
+        <div id="contenedor-contenido">
+
+            <div id="contenedor-titulo">
+                <h1 id="titulo">My to-do list</h1>
+                <h2 id="subtitulo"><i>Double-click an item to mark it complete</i></h2>
+            </div>
+    
+            <div id="contenedor-input">
+                <input type="text" id="input-tarea">
+                <button id="boton-agregar-tarea"><b>Add</b></button>
+            </div>
+
+            <div id="contenedor-tareas">
+                <ul>
+                    <ol id="lista-ordenada">
+                    </ol>
+                </ul>
+            </div>
+
+            <div id="contendor-botones">
+                <button id="limpiar-completado"><b> Clear completed</b></button>
+                <button id="limpiar-lista"><b>Empty list</b></button>
+                <button id="guardar-lista"><b>Save list</b></button>
+            </div>
+
+            <div id="mensaje-contenedor">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

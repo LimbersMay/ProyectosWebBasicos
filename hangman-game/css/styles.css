@@ -1,0 +1,77 @@
+body {
+    background-color: #73A9AD;
+}
+
+:root {
+    --font: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+#container {
+
+    width: 1300px;
+    height: 500px;
+    margin: auto;
+
+    position: relative;
+}
+
+#content-container {
+    background-color: #377D71;
+    position: absolute;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+
+    width: 94.5%;
+
+    font-family: var(--font);
+}
+
+#cont-top-messages {
+    color: white;
+    text-align: center;
+}
+
+/* Styles of the container of the words */
+.words-container {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.words-cont-guess{
+    text-align: center;
+}
+
+.word {
+    background-color: white;
+    color: #377D71;
+
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+
+    padding-top: 15px;
+    text-align: center;
+
+    width: 40px;
+    height: 35px;
+
+    border-radius: 8px;
+
+    display: inline-block;
+}
+
+/* Styles of elements in bottom */
+#title-bottom {
+    text-align: center;
+    color: white;
+}
+
+/* Styles of the lives that the player have*/
+#lives-cont {
+    color: white;
+    text-align: center;
+    font-size: 23px;
+}
